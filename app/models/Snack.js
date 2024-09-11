@@ -1,3 +1,5 @@
+import { AppState } from "../AppState.js"
+
 export class Snack {
   /**
    * @param {{ name: string; price: number; imgUrl: string; }} data
@@ -17,7 +19,9 @@ export class Snack {
               <p class="mb-1">${this.name}</p>
               <p class="mb-0">${this.priceAsCurrency}</p>
             </div>
-            <div onclick="app.SnacksController.buySnack('${this.name}')" role="button">Buy</div>
+            <button onclick="app.SnacksController.buySnack('${this.name}')" class="btn text-light spicy-chip" title="${this.snackTitle}" type="button">
+              Buy
+            </button>
           </div>
         </div>
       </div>
@@ -27,4 +31,9 @@ export class Snack {
   get priceAsCurrency() {
     return new Intl.NumberFormat('en-us', { style: 'currency', currency: 'USD' }).format(this.price)
   }
+
+  get snackTitle() {
+    return `Purchase ${this.name} for ${this.priceAsCurrency}`
+  }
+
 }
