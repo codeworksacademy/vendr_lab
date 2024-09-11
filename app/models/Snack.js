@@ -17,7 +17,7 @@ export class Snack {
               <p class="mb-1">${this.name}</p>
               <p class="mb-0">${this.priceAsCurrency}</p>
             </div>
-            <div role="button">Buy</div>
+            <div onclick="app.SnacksController.buySnack('${this.name}')" role="button">Buy</div>
           </div>
         </div>
       </div>

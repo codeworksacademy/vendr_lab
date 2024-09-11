@@ -15,6 +15,16 @@ class ObservableAppState extends EventEmitter {
       price: 3,
       imgUrl: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YnVyZ2VyfGVufDB8fDB8fHww'
     }),
+    new Snack({
+      name: 'Tacos',
+      price: 2.25,
+      imgUrl: 'https://images.unsplash.com/photo-1524412529635-a258ed66c010?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGFjb3xlbnwwfHwwfHx8MA%3D%3D'
+    }),
+    new Snack({
+      name: 'Taquitos',
+      price: 6.75,
+      imgUrl: 'https://images.unsplash.com/photo-1679605097294-ad339b020c0f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZW5jaGlsYWRhfGVufDB8fDB8fHww'
+    }),
   ]
   money = 0
 }
