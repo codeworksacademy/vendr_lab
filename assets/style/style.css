@@ -1,0 +1,12 @@
+/* BASIC STYLES HERE */
+
+#total-money {
+  border: 2px solid var(--bs-light);
+}
+
+img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
