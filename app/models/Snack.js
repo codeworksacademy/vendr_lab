@@ -1,4 +1,9 @@
 export class Snack {
+  constructor(data) {
+    this.name = data.name
+    this.price = data.price
+    this.imgUrl = data.imgUrl
+  }
   get cardHTMLTemplate() {
     return `
       <div class="col-md-4 mb-3">
